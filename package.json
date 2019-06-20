@@ -30,6 +30,7 @@
     "migrate": "node ./dist/migrate",
     "prestart": "npm run build",
     "start": "node .",
+    "graphql": "npx oasgraph http://localhost:3000/openapi.json",
     "prepublishOnly": "npm run test"
   },
   "repository": {
@@ -54,7 +55,8 @@
     "@loopback/rest": "^1.16.0",
     "@loopback/rest-explorer": "^1.2.2",
     "@loopback/service-proxy": "^1.2.2",
-    "loopback-connector-mysql": "^5.4.1"
+    "loopback-connector-mysql": "^5.4.1",
+    "oasgraph-cli": "^0.4.1"
   },
   "devDependencies": {
     "@loopback/build": "^2.0.0",
